@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>c++ teaching</title>
+    <style>@import "style.css";</style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body 風格=蛋黃>
+    <h1>資料型態</h1>
+    <hr>
+    <h2>字元</h2>
+    <div>char</div>
+    <div>unsigned char</div>
+    <h2>數值</h2>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script>
+      var ctx = document.getElementById('myChart');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['int','unsigned int','signed int','short int','unsigned short int','signed short int','long int','unsigned long int','signed long int'],
+            datasets: [
+              {
+                label: "正值",
+                data:[2147483647,4294967295,2147483647,32767,65535,32767,2147483647,4294967295,2147483647],
+                backgroundColor: [
+                    'rgba(252, 92, 101, 0.2)',
+                    'rgba(253, 150, 68, 0.2)',
+                    'rgba(254, 211, 48, 0.2)',
+                    'rgba(38, 222, 129, 0.2)',
+                    'rgba(43, 203, 186, 0.2)',
+                    'rgba(69, 170, 242, 0.2)',
+                    'rgba(75, 123, 236, 0.2)',
+                    'rgba(165, 94, 234, 0.2)',
+                    'rgba(209, 216, 224, 0.2)'
+                ],
+                borderColor: [
+                        'rgb(235, 59, 90)',
+                        'rgb(250, 130, 49)',
+                        'rgb(247, 183, 49)',
+                        'rgb(32, 191, 107)',
+                        'rgb(15, 185, 177)',
+                        'rgb(45, 152, 218)',
+                        'rgb(56, 103, 214)',
+                        'rgb(136, 84, 208)',
+                        'rgb(165, 177, 194)'
+                ],
+                borderWidth: 2
+                },
+              {
+                label: "負值",
+                data:[-2147483648,0,-2147483648,-32768,0,-32768,-2147483648,0,-2147483648],
+                backgroundColor: [
+                    'rgba(252, 92, 101, 0.2)',
+                    'rgba(253, 150, 68, 0.2)',
+                    'rgba(254, 211, 48, 0.2)',
+                    'rgba(38, 222, 129, 0.2)',
+                    'rgba(43, 203, 186, 0.2)',
+                    'rgba(69, 170, 242, 0.2)',
+                    'rgba(75, 123, 236, 0.2)',
+                    'rgba(165, 94, 234, 0.2)',
+                    'rgba(209, 216, 224, 0.2)'
+                ],
+                borderColor: [
+                        'rgb(235, 59, 90)',
+                        'rgb(250, 130, 49)',
+                        'rgb(247, 183, 49)',
+                        'rgb(32, 191, 107)',
+                        'rgb(15, 185, 177)',
+                        'rgb(45, 152, 218)',
+                        'rgb(56, 103, 214)',
+                        'rgb(136, 84, 208)',
+                        'rgb(165, 177, 194)'
+                ],
+                borderWidth: 2
+              }]
+          },
+          options: {
+            indexAxis: 'y',
+            plugins: {
+              title: {
+                display: true,
+              },
+            },
+            responsive: true,
+            scales: {
+              x: {
+                stacked: true,
+              },
+              y: {
+                stacked: true
+              }
+            }
+          }
+      });
+      </script>
+    <button type="button" onclick="location.href='index.html'"><img src="https://cdn0.iconfinder.com/data/icons/gradient-runded-glowing-icons/128/home.png" width="50"></button>
+  </body>
+</html>

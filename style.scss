@@ -1,0 +1,31 @@
+body[風格=草綠]{
+    h1{
+        background:rgb(66, 219, 28); 
+    }
+    #標頭{
+        border-style: outset;
+        background-color: rgb(135, 248, 205);
+        text-align:center;
+        width:45%;
+        font-size:30px;
+        color: rgb(8, 187, 17);
+        font-weight:600;
+    }
+    .單元{
+        font-size:20px;
+    }
+    .按鈕{
+        background-color: rgb(245, 166, 255);
+        font-size: 17px;
+    }
+}
+body[風格=天藍]{
+    h1{
+        background-color: rgb(0, 255, 255);
+    }
+}
+body[風格=蛋黃]{
+    h1{
+        background: rgb(255, 238, 0);
+    }
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body[風格=草綠] h1 {
+  background: #42db1c;
+}
+
+body[風格=草綠] #標頭 {
+  border-style: outset;
+  background-color: #87f8cd;
+  text-align: center;
+  width: 45%;
+  font-size: 30px;
+  color: #08bb11;
+  font-weight: 600;
+}
+
+body[風格=草綠] .單元 {
+  font-size: 20px;
+}
+
+body[風格=草綠] .按鈕 {
+  background-color: #f5a6ff;
+  font-size: 17px;
+}
+
+body[風格=天藍] h1 {
+  background-color: cyan;
+}
+
+body[風格=蛋黃] h1 {
+  background: #ffee00;
+}
+/*# sourceMappingURL=style.css.map */
