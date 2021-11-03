@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>c++ teaching</title>
+    <style>@import "style.css";</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body 風格=草綠>
+    <div>09360493>>></div>
+    <h1>c++教學</h1>
+    <hr>
+    <img src="https://jonny.vip/wp-content/uploads/2019/01/2019012917554490.jpg" width="300" alt="c++圖示"> <br>
+    <div id=標頭>請點選下面連結以進行學習</div> 
+    <div class=單元>單元1</div>
+    <input class=按鈕 type="button" value="基本數學運算" onclick="location.href='page2.html'" style="border:outset">
+    <div class=單元>單元2</div>
+    <input class=按鈕 type="button" value="資料型態" onclick="location.href='page3.html'" style="border:outset">
+    <div>現在時間 :</div>
+    <div time></div>
+    <script>
+        $(document).ready(function(){
+            setInterval(function(){
+              let now=new Date();
+              let y=now.getFullYear();
+              let m=now.getMonth()+1;
+              let d=now.getDate();
+              let h=now.getHours();
+              if(h<10){
+                h="0"+h;
+              }
+              let min=now.getMinutes();
+              if(min<10){
+                min="0"+min;
+              }
+              let s=now.getSeconds();
+              if(s<10){
+                s="0"+s;
+              }
+              $("[time]").html(`${y}/${m}/${d} ${h}:${min}:${s}`);
+            },1000);
+        });
+    </script>    
+  </body>
+</html>
